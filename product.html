@@ -1,100 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhagwan Decoration</title>
-
+  <title>Products</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Sidebar -->
-<div id="sidebar" class="sidebar">
-  <span class="close-btn" onclick="toggleSidebar()">✖</span>
+<h2 id="title" style="text-align:center;"></h2>
+<div id="productList" class="app-grid"></div>
 
-  <a onclick="goHome()">🏠 HOME</a>
-  <a onclick="openCategory('flag')">🚩 FLAG</a>
-  <a onclick="openCategory('hanging')">🌸 HANGING</a>
-  <a onclick="openCategory('rangoli')">🎨 RANGOLI</a>
-  <a onclick="openCategory('toran')">🚪 TORAN</a>
-  <a onclick="openCategory('mala')">🌼 MALA</a>
-  <a onclick="openCategory('bunting')">🎉 BUNTING</a>
-</div>
-
-<div id="overlay" onclick="closeSidebar()"></div>
-
-<!-- Header -->
-<div class="header">
-  <span class="menu" onclick="toggleSidebar()">☰</span>
-
-  <div class="brand">
-    <img src="logo.png" class="logo">
-    <h1 class="glow-text">Bhagwan Decoration</h1>
-  </div>
-
-  <p class="location" onclick="openMap()">📍 Hyderabad</p>
-</div>
-
-<!-- Search -->
-<div class="search-box">
-  <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
-  <button>🔍</button>
-</div>
-
-<!-- Grid -->
-<div class="app-grid">
-
-  <div class="app-card" onclick="openCategory('balloon')">
-    <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png">
-    <p>BALLOON</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('cake')">
-    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png">
-    <p>CAKE TOPPER</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('candle')">
-    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
-    <p>CANDLE</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('backdrop')">
-    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png">
-    <p>BACKDROP</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('curtain')">
-    <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png">
-    <p>CURTAIN</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('led')">
-    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png">
-    <p>LEDs</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('wedding')">
-    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176363.png">
-    <p>WEDDING</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('foil')">
-    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png">
-    <p>FOIL</p>
-  </div>
-
-  <div class="app-card" onclick="openCategory('banner')">
-    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-    <p>PAPER BANNER</p>
-  </div>
-
-</div>
-
-<p id="noResult" style="text-align:center; display:none;">❌ No items found</p>
-
-<script src="script.js"></script>
+<script src="products.js"></script>
 </body>
 </html>
