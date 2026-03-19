@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhagwan Decoration</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhagwan Decoration</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <!-- Sidebar -->
 <div id="sidebar" class="sidebar">
-  <span class="close-btn" onclick="toggleSidebar()">✖</span>
+
+  <!-- Logo + Name -->
+  <div class="side-header">
+    <img src="logo.png">
+    <h2>Bhagwan Decoration</h2>
+  </div>
+
+  <span class="close-btn" onclick="closeSidebar()">✖</span>
 
   <a onclick="goHome()">🏠 HOME</a>
   <a onclick="openCategory('flag')">🚩 FLAG</a>
@@ -21,12 +29,13 @@
   <a onclick="openCategory('toran')">🚪 TORAN</a>
   <a onclick="openCategory('mala')">🌼 MALA</a>
   <a onclick="openCategory('bunting')">🎉 BUNTING</a>
+
 </div>
 
 <div id="overlay" onclick="closeSidebar()"></div>
 
 <!-- Header -->
-<div class="header">
+<div class="header" id="header">
   <span class="menu" onclick="toggleSidebar()">☰</span>
 
   <div class="brand">
