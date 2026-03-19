@@ -1,11 +1,22 @@
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+const header = document.getElementById("header");
+
 function toggleSidebar() {
   sidebar.classList.toggle("active");
   overlay.classList.toggle("active");
+
+  if (sidebar.classList.contains("active")) {
+    header.style.display = "none";
+  } else {
+    header.style.display = "block";
+  }
 }
 
 function closeSidebar() {
   sidebar.classList.remove("active");
   overlay.classList.remove("active");
+  header.style.display = "block";
 }
 
 function openMap() {
