@@ -32,7 +32,7 @@ function searchItems() {
     let text = cards[i].innerText.toLowerCase();
 
     if (text.includes(input)) {
-      cards[i].style.display = "block";
+      cards[i].style.display = "flex";
       found = true;
     } else {
       cards[i].style.display = "none";
