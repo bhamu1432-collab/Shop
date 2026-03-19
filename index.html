@@ -3,30 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bhagwan Decoration</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- 🔥 HEADER -->
 <header>
-  <h1>Bhagwan Decoration</h1>
-  <p>Hyderabad</p>
+  <div class="top">
+    <span onclick="openMenu()">☰</span>
+    <h2>Bhagwan Decoration</h2>
+    <span>📍 Hyderabad</span>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="What are you looking for?">
+    <button class="ripple-btn">🔍</button>
+  </div>
 </header>
 
-<section class="banner">
-  <h2>Make Every Occasion Special 🎉</h2>
+<!-- 📂 SIDE MENU -->
+<div id="menu" class="menu">
+  <span class="close" onclick="closeMenu()">✖</span>
+
+  <a href="#">Birthday Decorations</a>
+  <a href="#">Anniversary</a>
+  <a href="#">Baby Shower</a>
+  <a href="#">Wedding</a>
+  <a href="#">House Warming</a>
+  <a href="#">Corporate Events</a>
+
+  <button class="track">Track Order</button>
+</div>
+
+<!-- 🎯 CATEGORY ICONS -->
+<section class="categories">
+  <div class="cat">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png">
+    <p>Birthday</p>
+  </div>
+
+  <div class="cat">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468384.png">
+    <p>Anniversary</p>
+  </div>
+
+  <div class="cat">
+    <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png">
+    <p>Baby Shower</p>
+  </div>
+
+  <div class="cat">
+    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png">
+    <p>Wedding</p>
+  </div>
 </section>
 
-<div id="products" class="cards"></div>
+<!-- 🎉 BANNER -->
+<section class="banner">
+  <h1>Make Every Occasion Special ✨</h1>
+</section>
 
-<!-- Google Map -->
-<iframe 
-src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="250">
-</iframe>
+<!-- 🧱 CARDS -->
+<section id="products" class="cards"></section>
 
 <!-- WhatsApp -->
 <a href="https://wa.me/919876543210" class="whatsapp ripple-btn">💬</a>
