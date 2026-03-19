@@ -1,22 +1,14 @@
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
-const header = document.getElementById("header");
 
 function toggleSidebar() {
-  sidebar.classList.toggle("active");
-  overlay.classList.toggle("active");
-
-  if (sidebar.classList.contains("active")) {
-    header.style.display = "none";
-  } else {
-    header.style.display = "block";
-  }
+  sidebar.classList.add("active");
+  overlay.classList.add("active");
 }
 
 function closeSidebar() {
   sidebar.classList.remove("active");
   overlay.classList.remove("active");
-  header.style.display = "block";
 }
 
 function openMap() {
@@ -31,7 +23,6 @@ function goHome() {
   window.location.href = "index.html";
 }
 
-/* Search */
 function searchItems() {
   let input = document.getElementById("searchInput").value.toLowerCase();
   let cards = document.getElementsByClassName("app-card");
