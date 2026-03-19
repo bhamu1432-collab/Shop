@@ -14,13 +14,12 @@
 <!-- Sidebar -->
 <div id="sidebar" class="sidebar">
 
-  <!-- Logo + Name -->
+  <span class="close-btn" onclick="closeSidebar()">✖</span>
+
   <div class="side-header">
     <img src="logo.png">
     <h2>Bhagwan Decoration</h2>
   </div>
-
-  <span class="close-btn" onclick="closeSidebar()">✖</span>
 
   <a onclick="goHome()">🏠 HOME</a>
   <a onclick="openCategory('flag')">🚩 FLAG</a>
@@ -35,7 +34,7 @@
 <div id="overlay" onclick="closeSidebar()"></div>
 
 <!-- Header -->
-<div class="header" id="header">
+<div class="header">
   <span class="menu" onclick="toggleSidebar()">☰</span>
 
   <div class="brand">
