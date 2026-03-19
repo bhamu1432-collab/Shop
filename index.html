@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagwan Decoration</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <span class="close-btn" onclick="toggleSidebar()">✖</span>
+
+  <a href="#">🏠 HOME</a>
+  <a href="#">🚩 FLAGS</a>
+  <a href="#">🌸 HANGING</a>
+  <a href="#">BUNTINGS</a>
+  <a href="#">🎉 MALA</a>
+  <a href="#">🪟 PANELS</a>
+  <a href="#">🎈 THEMES</a>
+  <a href="#">📞 CONTACT</a>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Header -->
+<div class="header">
+
+  <span class="menu" onclick="toggleSidebar()">☰</span>
+
+  <!-- Logo + Name -->
+  <div class="brand">
+    <img src="logo.png" class="logo">
+    <h1 class="glow-text">Bhagwan Decoration</h1>
+  </div>
+
+  <!-- Location -->
+  <p class="location" onclick="openMap()">📍 Hyderabad</p>
+
+</div>
+
+<!-- Banner -->
+<div class="banner">
+  <h1>✨ Premium Decoration Services ✨</h1>
+  <p>Make your events unforgettable</p>
+</div>
+
+<!-- Search -->
+<div class="search-box">
+  <input type="text" placeholder="Search decoration...">
+  <button>🔍</button>
+</div>
+
+<!-- Cards -->
+<div class="grid">
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png">
+    <p>Balloons</p>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png">
+    <p>Flower</p>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+    <p>Candles</p>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png">
+    <p>Backdrop</p>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png">
+    <p>Curtain</p>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png">
+    <p>LED</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
