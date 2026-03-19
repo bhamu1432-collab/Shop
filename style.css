@@ -8,20 +8,22 @@ body {
 /* Header */
 .header {
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   position: relative;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
 }
 
+/* Menu */
 .menu {
   position: absolute;
   left: 15px;
-  top: 20px;
-  font-size: 25px;
+  top: 18px;
+  font-size: 26px;
   cursor: pointer;
 }
 
+/* Brand */
 .brand {
   display: flex;
   justify-content: center;
@@ -29,8 +31,11 @@ body {
   gap: 10px;
 }
 
-.logo { width: 40px; }
+.logo {
+  width: 42px;
+}
 
+/* Glow Text */
 .glow-text {
   background: linear-gradient(90deg, #fff, #a855f7, #fff);
   background-size: 200%;
@@ -43,7 +48,12 @@ body {
   100% { background-position: 200%; }
 }
 
-.location { color: #ffb3ff; cursor: pointer; }
+/* Location */
+.location {
+  color: #ffb3ff;
+  cursor: pointer;
+  font-size: 14px;
+}
 
 /* Search */
 .search-box {
@@ -53,17 +63,18 @@ body {
 
 .search-box input {
   flex: 1;
-  padding: 10px;
-  border-radius: 20px 0 0 20px;
+  padding: 12px;
+  border-radius: 25px 0 0 25px;
   border: none;
+  outline: none;
 }
 
 .search-box button {
-  padding: 10px;
+  padding: 12px;
   border: none;
-  background: purple;
+  background: linear-gradient(90deg, #7b2ff7, #a4508b);
   color: white;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 25px 25px 0;
 }
 
 /* Grid */
@@ -74,32 +85,41 @@ body {
   padding: 15px;
 }
 
+/* Cards */
 .app-card {
   aspect-ratio: 1/1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  border-radius: 18px;
+  border-radius: 20px;
+
   background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 
   border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 
   transition: 0.25s;
 }
 
-.app-card img { width: 50px; }
+/* Icon */
+.app-card img {
+  width: 50px;
+}
 
+/* Text */
 .app-card p {
   margin-top: 8px;
   font-size: 13px;
 }
 
+/* Touch */
 .app-card:active {
-  transform: scale(0.9);
+  transform: scale(0.92);
 }
 
 /* Sidebar */
@@ -109,18 +129,24 @@ body {
   left: -270px;
   width: 260px;
   height: 100%;
+
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(20px);
+
   border-right: 1px solid rgba(255,255,255,0.2);
+
   transition: 0.4s;
   z-index: 2000;
 }
 
-.sidebar.active { left: 0; }
+.sidebar.active {
+  left: 0;
+}
 
+/* Sidebar Header FIX */
 .side-header {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;   /* FIXED */
   margin-bottom: 20px;
 }
 
@@ -130,35 +156,57 @@ body {
   margin-bottom: 10px;
 }
 
+/* Sidebar links */
 .sidebar a {
   display: block;
   margin: 10px;
   padding: 14px;
   border-radius: 12px;
+
+  color: white;
+  text-decoration: none;
+
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
 }
 
+.sidebar a:hover {
+  background: linear-gradient(90deg, #7b2ff7, #a4508b);
+}
+
+/* Close button FIX */
 .close-btn {
   position: absolute;
   top: 15px;
   right: 15px;
+  font-size: 20px;
   cursor: pointer;
+  z-index: 2100;
 }
 
 /* Overlay */
 #overlay {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+
   background: rgba(0,0,0,0.4);
+
   display: none;
   z-index: 1500;
 }
 
-#overlay.active { display: block; }
+#overlay.active {
+  display: block;
+}
 
+/* No Result */
 #noResult {
   text-align: center;
   display: none;
+  margin-top: 10px;
 }
