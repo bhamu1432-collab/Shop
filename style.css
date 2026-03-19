@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, purple, violet);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Search */
+.search-box {
+    padding: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #eee;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.cat {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
