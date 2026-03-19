@@ -4,42 +4,116 @@ body {
   background: #faf7fb;
 }
 
-/* Header */
+/* HEADER */
 header {
-  background: linear-gradient(135deg, #c8a2ff, #7b2cbf);
+  background: linear-gradient(135deg,#c77dff,#7b2cbf);
   color: white;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  margin-top: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.search button {
+  padding: 10px;
+  border: none;
+  background: gold;
+  border-radius: 0 10px 10px 0;
+}
+
+/* SIDE MENU */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background: white;
   padding: 20px;
-  text-align: center;
+  transition: 0.3s;
+  z-index: 1000;
 }
 
-header h1 {
-  font-family: 'Playfair Display', serif;
+.menu a {
+  display: block;
+  margin: 15px 0;
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Banner */
-.banner {
-  background: linear-gradient(135deg, #e0aaff, #c77dff);
+.menu .close {
+  float: right;
+  cursor: pointer;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.track {
+  width: 100%;
+  padding: 10px;
+  background: teal;
   color: white;
-  margin: 15px;
-  padding: 25px;
-  text-align: center;
-  border-radius: 20px;
-  font-family: 'Playfair Display', serif;
+  border: none;
+  border-radius: 10px;
 }
 
-/* Cards */
+/* CATEGORY */
+.categories {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+}
+
+.cat {
+  text-align: center;
+}
+
+.cat img {
+  width: 60px;
+}
+
+/* BANNER */
+.banner {
+  margin: 10px;
+  padding: 20px;
+  background: linear-gradient(135deg,#e0aaff,#c77dff);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display';
+}
+
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 15px;
-  padding: 15px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .card {
   background: white;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(123,44,191,0.15);
 }
 
 .card img {
@@ -49,55 +123,19 @@ header h1 {
 }
 
 .card h3 {
-  font-family: 'Playfair Display', serif;
-  color: #5a189a;
+  padding: 5px;
 }
 
-.card p {
-  color: #777;
-}
-
-/* Button */
-.ripple-btn {
-  position: relative;
-  overflow: hidden;
-  padding: 10px 18px;
-  background: linear-gradient(45deg, gold, #ffd700);
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
+.card a {
   display: inline-block;
+  margin: 10px;
+  padding: 8px;
+  background: gold;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
-/* Ripple */
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.6);
-  transform: scale(0);
-  animation: ripple 0.6s linear;
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
-/* Product Page */
-.product-page {
-  padding: 20px;
-  text-align: center;
-}
-
-.product-page img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-/* WhatsApp */
+/* WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -106,4 +144,19 @@ header h1 {
   color: white;
   padding: 15px;
   border-radius: 50%;
+}
+
+/* RIPPLE */
+.ripple {
+  position: absolute;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
