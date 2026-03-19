@@ -1,9 +1,14 @@
 function toggleSidebar() {
-  let sidebar = document.getElementById("sidebar");
+  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("overlay").classList.toggle("active");
+}
 
-  if (sidebar.style.width === "250px") {
-    sidebar.style.width = "0";
-  } else {
-    sidebar.style.width = "250px";
-  }
+function closeSidebar() {
+  document.getElementById("sidebar").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+
+/* Open your real shop location */
+function openMap() {
+  window.open("https://maps.app.goo.gl/zHJByjEHvwHVsNNk9", "_blank");
 }
